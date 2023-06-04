@@ -9,7 +9,7 @@
 
 n = int(input('Введите количество элементов первого множества: '))
 m = int(input('Введите количество элементов второго множества: '))
-user_data = set(input('Введите элементы множества(целые числа): ').split()) # it work's
+user_data = set(input('Введите элементы множества(целые числа): ').split())
 
 user_set1 = {user_data for user_data in range(n)}
 user_set2 = {user_data for user_data in range(m)}
