@@ -4,10 +4,12 @@
 # только +1 и -1. Также нельзя использовать циклы.
 
 def sum(a,b):
-    if a==b:
-        return a+b
-    else:
-        return (a-1)+(b+1)
+   a+=1
+   b-=1
+   if b > 0:
+      return sum(a,b)
+   else:
+      return a
 
 a, b = int(input("Введите первое число: ")), int(input("Введите второе число: "))
 print(f'Сумма чисел {a} и {b} равна: {sum(a,b)}')
